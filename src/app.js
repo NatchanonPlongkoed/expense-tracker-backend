@@ -10,7 +10,8 @@ const PORT = process.env.PORT || 5000;
 
 // ── Middleware ─────────────────────────────────────────────────────
 app.use(cors({
-  origin: ["http://localhost:5173", "http://localhost:4173", "http://localhost:3000"],
+  origin: ["http://localhost:5173", "http://localhost:4173", "http://localhost:3000",
+           "https://expense-tracker-psi-lemon-67.vercel.app"],
   methods: ["GET", "POST", "PUT", "DELETE"],
   allowedHeaders: ["Content-Type"],
 }));
